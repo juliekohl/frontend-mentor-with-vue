@@ -13,6 +13,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+h1 {
+  background-color: red;
+}
 </style>
