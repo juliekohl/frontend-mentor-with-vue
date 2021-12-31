@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <button class="button-unit">Notify Me</button>
-  </div>
+  <button class="button-unit">Notify Me</button>
 </template>
 
 <script>
