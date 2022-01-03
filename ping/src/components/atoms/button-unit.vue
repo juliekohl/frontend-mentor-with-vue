@@ -11,9 +11,9 @@ export default {
 <style lang="scss">
 .button-unit {
   width: 100%;
-  height: 75rem;
+  height: 65rem;
   padding: 10rem;
-  margin: 10rem;
+  margin: 10rem auto;
   font-size: 25rem;
   font-weight: 600;
   text-align: center;
