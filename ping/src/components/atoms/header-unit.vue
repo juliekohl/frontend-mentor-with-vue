@@ -25,7 +25,11 @@ export default {
     display: block;
     width: 110rem;
     margin: 150rem auto 0;
+
+    @include media('>=600') {
+      width: 90rem;
+      margin: 155rem auto 0;
+    }
   }
 }
-
 </style>
