@@ -5,7 +5,6 @@
             'icon-unit__image',
             name && `icon-unit__image--name-${name}`
             ]"
-        :src="require(`@/assets/img/icons/${name}.svg`)"
         :alt="alt"
     />
   </a>
@@ -39,20 +38,27 @@ export default {
 
   &__image {
     align-self: center;
-    color: var(--color-blue-60);
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    background-color: var(--color-blue-60);
 
     &:hover {
-      color: white;
+      background-color: white;
     }
 
     &--name-facebook-icon {
-      width: 15rem;
+      mask-image: url(../../assets/img/icons/facebook-icon.svg);
+      mask-size: 15rem;
     }
+
     &--name-twitter-icon {
-      width: 20rem;
+      mask-image: url(../../assets/img/icons/twitter-icon.svg);
+      mask-size: 20rem;
     }
+
     &--name-instagram-icon {
-      width: 23rem;
+      mask-image: url(../../assets/img/icons/instagram-icon.svg);
+      mask-size: 23rem;
     }
   }
 }
