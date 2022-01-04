@@ -8,7 +8,6 @@
         :alt="alt"
     />
   </a>
-
 </template>
 
 <script>
