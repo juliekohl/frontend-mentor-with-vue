@@ -2,17 +2,19 @@
   <div class="app">
     <header-unit class="app__header-unit" />
     <section-form class="app__main" />
-
+    <footer-item class="app__footer-item" />
   </div>
 </template>
 
 <script>
 import HeaderUnit from "./components/atoms/header-unit";
 import SectionForm from "./components/molecules/section-form";
+import FooterItem from "./components/molecules/footer-item";
 
 export default {
   name: 'App',
   components: {
+    FooterItem,
     SectionForm,
     HeaderUnit,
   }
@@ -28,7 +30,7 @@ export default {
     grid-template-areas:
     "header-unit"
     "main"
-    "footer-unit";
+    "footer-item";
   }
 
   &__header-unit {
@@ -37,6 +39,10 @@ export default {
 
   &__main {
     grid-area: main;
+  }
+
+  &__footer-item {
+    grid-area: footer-item;
   }
 }
 </style>
