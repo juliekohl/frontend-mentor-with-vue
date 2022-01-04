@@ -123,6 +123,11 @@ export default {
     border: 1rem solid var(--color-gray-70);
     border-radius: 40px;
     color: var(--gray);
+
+    @include media('>=600') {
+      width: 60%;
+      margin-right: 10rem;
+    }
   }
 
   &__span {
