@@ -22,11 +22,13 @@
       />
       <button-unit class="section-form__button" type="submit" />
     </Form>
-    <img
-        class="section-form__img"
-        src="@/assets/img/illustration-dashboard.png"
-        alt="illustration"
-    >
+    <div class="section-form__image">
+      <img
+          class="section-form__img"
+          src="@/assets/img/illustration-dashboard.png"
+          alt="illustration"
+      >
+    </div>
   </div>
 </template>
 
@@ -132,9 +134,16 @@ export default {
 
   &__span {
     display: block;
-    margin: 10rem;
-    text-align: center;
+    width: 200rem;
+    margin-top: 10rem;
+    text-align: start;
     color: var(--color-red-40);
+  }
+
+  &__image {
+    @include media('>=600') {
+      --width-max: 900rem;
+    }
   }
 
   &__img {
