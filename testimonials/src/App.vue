@@ -1,16 +1,16 @@
 <template>
   <div class="app">
-    <HelloWorld />
+    <button-unit />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ButtonUnit from "./components/atoms/button-unit";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ButtonUnit,
   }
 }
 </script>

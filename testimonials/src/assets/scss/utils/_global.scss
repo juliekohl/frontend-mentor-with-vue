@@ -9,7 +9,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: var(--font-primary);
     font-size: 16rem;
-    color: var(--color-blue-100);
+    color: var(--color-white-30);
     cursor: default;
 
     &.scroll-lock {
@@ -53,5 +53,5 @@ a {
 }
 
 a:hover {
-    color: white;
+    filter: brightness(85%);
 }
