@@ -20,7 +20,6 @@ export default {
   top: 265rem;
   left: calc(50% - 40rem);
   z-index: 1;
-  border: 2px solid red;
 
   &__btn {
     flex-grow: 1;
@@ -36,12 +35,22 @@ export default {
   }
 
   &__btn-left {
-    background-image: url(../../assets/images/icon-prev.svg);
+    width: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-size: 10rem;
+    background-image: url(../../assets/images/icons/icon-prev.svg);
     border-radius: 50% 0 0 50%;
   }
 
   &__btn-right {
-    background-image: url(../../assets/images/icon-next.svg);
+    width: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-size: 10rem;
+    background-image: url(../../assets/images/icons/icon-next.svg);
     border-radius: 0 50% 50% 0;
   }
 }

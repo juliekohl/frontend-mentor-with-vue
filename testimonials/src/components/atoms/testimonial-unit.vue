@@ -23,20 +23,22 @@ export default {
 
 <style lang="scss">
 .testimonial {
-  border: 2px solid green;
+  font: var(--font-inter);
+
   &__text {
     width: 90%;
-    margin: 70px auto 0;
+    margin: 70rem auto 0;
     text-align: center;
-    //margin-right: auto;
-    font-size: 18px;
+    font-size: 18rem;
     font-weight: 300;
+    color: var(--color-blue-100);
   }
   &__name {
     display: block;
     text-align: center;
     margin-top: 20px;
     font-weight: 700;
+    color: var(--color-blue-100);
   }
   &__job {
     display: block;
@@ -44,6 +46,7 @@ export default {
     margin-top: 5px;
     font-size: 15px;
     font-weight: 300;
+    color: var(--color-gray-70);
   }
 }
 </style>
