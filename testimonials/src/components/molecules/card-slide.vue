@@ -26,9 +26,8 @@ export default {
 <style lang="scss">
 .card-slide {
   display: contents;
-  border: 2px solid blue;
   width: 100%;
-  margin-top: 35px;
+  margin-top: 35rem;
   opacity: 0;
 
   &.active {
