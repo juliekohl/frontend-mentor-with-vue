@@ -19,7 +19,8 @@ export default {
 <style lang="scss">
 .photo {
   display: block;
-  width: 250px;
+  width: 250rem;
   margin: 35rem auto 0;
+  box-shadow: var(--box-shadow-v2);
 }
 </style>

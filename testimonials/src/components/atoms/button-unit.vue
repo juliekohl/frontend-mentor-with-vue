@@ -13,13 +13,15 @@ export default {
 
 <style lang="scss">
 .button {
-  display: flex;
   position: absolute;
-  width: 80rem;
-  height: 40rem;
   top: 265rem;
   left: calc(50% - 40rem);
   z-index: 1;
+  display: flex;
+  width: 80rem;
+  height: 40rem;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-v2);
 
   &__btn {
     flex-grow: 1;
@@ -31,7 +33,7 @@ export default {
     background-size: 10rem;
     border: 0;
     cursor: pointer;
-    box-shadow: 0rem 3rem 3rem 0rem rgba(214, 214, 214, 0.4);
+
   }
 
   &__btn-left {

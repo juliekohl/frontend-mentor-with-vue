@@ -20,12 +20,18 @@ export default {
 
 <style lang="scss">
 .app {
-  background-color: white;
-  //background-image: url(./src/assets/images/icons/pattern-bg.svg);
+  display: grid;
+  height: 70vh;
+  background-color: #fff9f9;
+  background-image: url("./assets/images/icons/pattern-bg.svg");
   background-position: top center;
-  background-size: 320px;
+  background-size: 320rem;
   background-repeat: no-repeat;
-  box-shadow: 0px 10px 18px 0px rgba(214, 214, 214, 0.5);
 
+  @include media('>=600') {
+    grid-template-columns: 1fr 330px 1fr;
+    grid-template-rows: 1fr 650px 1fr;
+    height: 100vh;
+  }
 }
 </style>
