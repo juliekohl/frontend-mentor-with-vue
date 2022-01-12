@@ -20,6 +20,6 @@ export default {
 .photo {
   display: block;
   width: 250px;
-  margin: 0 auto;
+  margin: 35rem auto 0;
 }
 </style>
