@@ -24,12 +24,25 @@ export default {
 <style lang="scss">
 .testimonial {
   position: relative;
+  width: 100%;
+  margin-top: 35rem;
+  padding: 10rem;
   font: var(--font-inter);
+
+  @include media('>=600') {
+    position: absolute;
+    top: 160rem;
+    left: 90rem;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+  }
 
   &::before {
     position: absolute;
     display: block;
-    bottom: 0;
+    top: 320rem;
     left: 0;
     width: 100%;
     height: 230rem;
@@ -38,12 +51,18 @@ export default {
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 260rem;
+
+    @include media('>=600') {
+      bottom: 0;
+      height: 300rem;
+      background-size: 480rem;
+    }
   }
 
   &::after {
     position: absolute;
     display: block;
-    top: 40rem;
+    top: 210rem;
     width: 100rem;
     height: 100rem;
     left: calc(50% - 50px);
@@ -52,15 +71,32 @@ export default {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 60rem;
+
+    @include media('>=600') {
+      top: 0rem;
+      left: 50rem;
+      width: 140rem;
+      height: 140rem;
+      background-position: top left;
+      background-size: 140rem;
+    }
   }
 
   &__text {
     width: 90%;
-    margin: 70rem auto 0;
+    margin: 240rem auto 0;
     text-align: center;
     font-size: 18rem;
     font-weight: 300;
     color: var(--color-blue-100);
+
+    @include media('>=600') {
+      width: auto;
+      margin-top: 0;
+      font-size: 32rem;
+      text-align: left;
+      line-height: 43rem;
+    }
   }
 
   &__name {
@@ -69,6 +105,11 @@ export default {
     margin-top: 20rem;
     font-weight: 700;
     color: var(--color-blue-100);
+
+    @include media('>=600') {
+      margin-top: 40rem;
+      font-size: 20rem;
+    }
   }
 
   &__job {
@@ -78,6 +119,12 @@ export default {
     font-size: 15rem;
     font-weight: 300;
     color: var(--color-gray-70);
+
+    @include media('>=600') {
+      margin-top: 40rem;
+      margin-left: 20rem;
+      font-size: 20rem;
+    }
   }
 }
 </style>

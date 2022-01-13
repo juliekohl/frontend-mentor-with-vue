@@ -23,6 +23,14 @@ export default {
   border-radius: 50%;
   box-shadow: var(--box-shadow-v2);
 
+  @include media('>=600') {
+    top: 585rem;
+    right: 410rem;
+    left: auto;
+    width: 120rem;
+    height: 60rem;
+  }
+
   &__btn {
     flex-grow: 1;
     width: 40rem;
@@ -33,7 +41,6 @@ export default {
     background-size: 10rem;
     border: 0;
     cursor: pointer;
-
   }
 
   &__btn-left {
@@ -44,6 +51,11 @@ export default {
     background-size: 10rem;
     background-image: url(../../assets/images/icons/icon-prev.svg);
     border-radius: 50% 0 0 50%;
+
+    @include media('>=600') {
+      width: 120rem;
+      background-size: 12rem;
+    }
   }
 
   &__btn-right {
@@ -54,6 +66,12 @@ export default {
     background-size: 10rem;
     background-image: url(../../assets/images/icons/icon-next.svg);
     border-radius: 0 50% 50% 0;
+
+    @include media('>=600') {
+      width: 120rem;
+      background-size: 12rem;
+    }
   }
+
 }
 </style>
