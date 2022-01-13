@@ -48,6 +48,11 @@ export default {
     transition: 1s;
   }
 
+  @include media('>=600') {
+    height: 580rem;
+    margin-top: 60rem;
+  }
+
   &__image {}
 
   &__testimonial {}
